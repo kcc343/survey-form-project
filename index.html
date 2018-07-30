@@ -15,7 +15,7 @@
 			<br>
 			<label id="email-label">Email: <input id="email" placeholder="Enter your email" type="email" required></label>
 			<br>
-			<label id="number-label">: <input id="number" placeholder="Enter your age" type="number" required></label>
+			<label id="number-label">Age: <input id="number" placeholder="Enter your age" type="number" min="1" max="105" required></label>
 			<br>
 			<label id="satisfaction-label">Are you satisfied with this webpage?
 				<select id="dropdown">
@@ -25,7 +25,11 @@
 				</select>
 			</label>
 			<br>
-			<label id="coding-label">
+			<label id="gender-label">Gender:
+			<label><input type="radio" name="male-female" value="male">Male</label>
+			<label><input type="radio" name="male-female" value="female">Female</label>
+			<label><input type="radio" name="other" value="">Other: <input id="other-gender" placeholder="Other gender..." type="text"></label>
+			</label>
 		</form>
 	</body>
 </html>
