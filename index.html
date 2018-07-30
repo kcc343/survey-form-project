@@ -3,15 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Feedback Page</title>
-		<!--<link rel="stylesheet" href="style.css">-->
+		<link rel="stylesheet" href="style.css">
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</head>
 	<body id="main">
 		<h1 id="title">Feedback</h1>
-		<form>
-			<p id="description"></p>
+		<form id="survey-form">
+			<p id="description">Please tell me what you think of the website!</p>
 			<br>
-			<p id="element_name">Name: </p><input type="text">
+			<label id="name-label">Name: <input id="name" placeholder="Enter your first and last name" type="text" required></label>
+			<br>
+			<label id="email-label">Email: <input id="email" placeholder="Enter your email" type="email" required></label>
+			<br>
+			<label id="number-label">: <input id="number" placeholder="Enter your age" type="number" required></label>
+			<br>
+			<label id="satisfaction-label">Are you satisfied with this webpage?
+				<select id="dropdown">
+					<option value="" disabled selected>Pick an option</option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+			</label>
+			<br>
+			<label id="coding-label">
 		</form>
 	</body>
 </html>
